@@ -52,4 +52,4 @@ async def square_image():
     return await send_file(buf, mimetype='image/png', as_attachment=True, attachment_filename='squared.png')
 
 if __name__ == '__main__':
-    app.run() 
+    app.run(host='0.0.0.0', port=5000)
